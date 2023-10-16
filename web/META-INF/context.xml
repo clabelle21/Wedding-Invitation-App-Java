@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/WeddingInvitationApp">
+
+<Resource name="jdbc/reception" auth="Container" global="jdbc/reception"
+              type="javax.sql.DataSource" driverClassName="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/reception"
+              username="ctweddingadmin" password="ctwed2020"
+              maxTotal="100" maxIdle="30" maxWaitMillis="1000"/>
+</Context>

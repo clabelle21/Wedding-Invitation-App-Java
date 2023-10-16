@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>RegisterGuest</servlet-name>
+        <servlet-class>processing.RegisterGuest</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ValidateGuest</servlet-name>
+        <servlet-class>processing.ValidateGuest</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterGuest</servlet-name>
+        <url-pattern>/RegisterGuest</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ValidateGuest</servlet-name>
+        <url-pattern>/ValidateGuest</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+    <resource-ref>
+        <description>Connection Pool</description>
+        <res-ref-name>jdbc/reception</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
+</web-app>

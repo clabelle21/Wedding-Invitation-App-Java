@@ -1,0 +1,288 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20-Nov-2019, 5:52:16 PM
+    Author     : chris
+*/
+
+/* 1vw = 1% of viewport width; */
+
+header {
+    background-color: #811c1c;
+    
+    font-size: 50px;
+    text-align: center;
+    
+    padding: 20px;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+form {
+    padding: 30px;
+}
+
+div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #811c1c;
+    border-left: 0px #FFFFFF; 
+    border-right: 0px #FFFFFF;
+    border-top: 0px #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    color: #811c1c;
+    font-family: Verdana, Geneva, serif;
+    font-size: 20px;
+}
+
+#infoBox td{
+    text-align: left;
+}
+
+#buttonWrapper {
+    border-width: 0px;
+}
+
+.spacing {
+    border-width: 0px;
+    padding: 30px;
+}
+
+table {
+    margin: auto;
+}
+
+td {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+}
+
+input[type=submit] {
+    margin: auto;
+    padding: 10px;
+    width: 200px;
+    font-size: 25px;
+    font-family: Verdana, Geneva, serif;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #470404;
+    background-color: #811c1c;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+input[type=text] {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #7C8471;
+    border-top: 0px #FFFFFF;
+    border-left: 0px #FFFFFF;
+    border-right: 0px #FFFFFF;
+    font-size: 20px;
+    text-align: center;
+}
+
+input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+}
+
+input[type=radio] {
+    width: 20px;
+    height: 20px;
+}
+
+#headerTitle {
+    font: 400 50px/0.8 'Great Vibes', Helvetica, sans-serif;
+    /*color: #2b2b2b;*/
+    text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
+    color: #d8d192;
+    /*font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+    font-style: italic;*/
+}
+
+#homeLink a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: Verdana, Geneva, serif;
+    font-size: 25px;
+    float: left;
+}
+
+#emailBox {
+    border-bottom: 0px #FFFFFF;
+}
+
+#email {
+    width: 500px;
+}
+
+iframe {
+    width: 800px; 
+    height: 400px;
+}
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+
+    header {
+            background-color: #811c1c;
+
+            font-size: 50px;
+            text-align: center;
+
+            padding: 5px;
+    }
+
+    #headerTitle {
+            font: 400 20px/0.8 'Great Vibes', Helvetica, sans-serif;
+            /*color: #2b2b2b;*/
+            text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
+            color: #d8d192;
+            /*font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+            font-style: italic;*/
+    }
+
+    #homeLink a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-family: Verdana, Geneva, serif;
+            font-size: 7px;
+            float: left;
+    }
+
+    div {
+    /*
+            margin-left: auto;
+    margin-right: auto;
+            */
+    width: 90%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #811c1c;
+    border-left: 0px #FFFFFF; 
+    border-right: 0px #FFFFFF;
+    border-top: 0px #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    color: #811c1c;
+    font-family: Verdana, Geneva, serif;
+    font-size: 7px;
+    }
+
+    td {
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 5px;
+    }
+
+    .spacing {
+            border-width: 0px;
+            padding: 10px;
+    }
+
+    input[type=submit] {
+            margin: auto;
+            padding: 15px;
+            width: 80px;
+            font-size: 15px;
+            font-family: Verdana, Geneva, serif;
+            border-radius: 1px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: #470404;
+            background-color: #811c1c;
+            color: #FFFFFF;
+            cursor: pointer;
+    }
+
+    input[type=text] {
+            border-width: 1px;
+            border-style: solid;
+            border-color: #7C8471;
+            border-top: 0px #FFFFFF;
+            border-left: 0px #FFFFFF;
+            border-right: 0px #FFFFFF;
+            font-size: 7px;
+            text-align: center;
+    }
+
+    #email {
+            width: 200px;
+    }
+
+    iframe {
+            width: 300px; 
+            height: 150px;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
